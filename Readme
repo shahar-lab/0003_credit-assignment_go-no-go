@@ -1,0 +1,13 @@
+this model includes XX free parameters (α1, α2, β1, λ, pers, go_bias)
+here we simulate N agents participating in a 2 stage task that includes 2 states at the 2nd stage 
+each stae contains 2 choices 
+each if the first stage choices lead constantly (100% of the trails) to a specific state at the 2nd stage
+
+for selecting a choice the agent has to execuate a "Go" or a "No go" 
+the type of action is set randomly to the choices at each trail 
+
+
+
+
+
+
