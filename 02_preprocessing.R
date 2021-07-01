@@ -38,6 +38,12 @@ sd(df_task$rt2[df_task$rt2>0])
 #percent of go
 df_task_go<-df_task%>%group_by(subj)%>%summarise(pGo1=mean(key1),pGo2=mean(key2))
 colMeans(df_task_go)
+
+#counting the number of go trails 
+#we might have a problem with a few subject thst has a low go rate  
+c<-data.frame(table(df$subj[df$key1==1]),table(df$subj[df$key2==1]),table(df$subj[df$key1==1 & df$key2==1]))
+
+
 sd(df_task_go$pGo1)
 sd(df_task_go$pGo2)
 hist(df_task_go$pGo1,xlim=c(0,1),col='skyblue',border=F,main="Histogram for 'go' responses",xlab="perecent of 'go' steps ", ylab="Frequency")
@@ -92,8 +98,8 @@ save(wurs,file='03_data/02_aggregated_data/wurs.Rdata')
 
 #####ASRS-------------------------------------------------------------------
 load('03_data/02_aggregated_data/asrs_raw.Rdata')
-asrs$asrs6     <-apply(asrs[,1:6],1,sum)
-asrs$asrs.partb<-apply(asrs[,7:20],1,sum)
+asrs$asrs6 <- apply(asrs[,paste("item_",1:6,sep="")],1,sum)
+asrs$asrs.partb <- apply(asrs[,paste("item_",7:20,sep="")],1,sum)
 asrs%<>% select(subj,asrs6,asrs.partb)
 save(asrs,file='03_data/02_aggregated_data/asrs.Rdata')
 
