@@ -1,5 +1,6 @@
-**Go/No-go Two-step task.
-This is a Go/No-go two-step task. 
+**Go/No-go Two-step task.**
+
+This is a Go/No-go two-step task.
 You can run it locally by putting these files in a web server. 
 
 
