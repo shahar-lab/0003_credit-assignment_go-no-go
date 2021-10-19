@@ -1,0 +1,272 @@
+@-webkit-keyframes movetop {
+    80% {opacity:1;}
+	100% {opacity:.4; transform: translate(-50%, -115%);}
+}
+
+@keyframes movetop {
+    80% {opacity:1;}
+	100% {opacity:.4; transform: translate(-50%, -115%);}
+}
+
+.selected{
+/*	-webkit-animation: movetop 1s forwards; */
+/*	animation: movetop 1s forwards; */
+	border: 3px
+  dashed #0000ff;
+/*  dashed #000000;*/
+}
+
+
+@-webkit-keyframes fade {
+	80% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes fade {
+	80% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.faded {
+	/*opacity: .4;
+	filter: alpha(opacity=40);*/
+}
+
+.fade {
+/*	-webkit-animation: fade 1s forwards;
+	animation: fade 1s forwards; */
+}
+
+.decision-stim {
+  display: block;
+  height: 18vw;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+.decision-left {
+	width: 25vw;
+	height: 25vw;
+  position:absolute;
+  top:45%;
+  left:50%;
+  margin-right:-50%;
+  transform: translate(-125%,-5%);
+}
+
+.decision-right {
+	width: 25vw;
+	height: 25vw;
+  position:absolute;
+  top:45%;
+  left:50%;
+  margin-right:-50%;
+  transform: translate(25%,-5%);
+}
+
+.decision-top {
+/*  width: 18vw;
+  height: 18vw;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-right:-50%;
+  transform: translate(-50%,-115%);
+  border-style: solid;
+  border-color: white; */
+}
+
+.decision-fb {
+  width:200px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-right:-50%;
+  transform: translate(-50%,-50%);
+}
+
+
+.strategy_stim {
+  display: block;
+  height: 10vw;
+	position:absolute;
+	top:-25%;
+	left:50%;
+	transform: translate(-50%,-25%);
+}
+
+.background_images {
+  display: block;
+  height: 47vw;
+  width: 78vw;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+.centerbox {
+  width: 50vw;
+  height: 60vh;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-right:-50%;
+  transform: translate(-50%,-50%);
+}
+
+/* fixation should be used like this in: '<div class = centerbox><div class = fixation>+</div></div>'*/
+.fixation {
+  text-align: center;
+  font-size:50px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  color: black;
+}
+
+.FB-stim {
+    display: block;
+    height: 38vw;
+  	position:absolute;
+  	top:50%;
+  	left:51%;
+  	transform: translate(-50%,-50%);
+}
+
+.FB-stim-reward {
+    display: block;
+    height: 45vw;
+  	position:absolute;
+  	top:50%;
+  	left:51%;
+  	transform: translate(-50%,-50%);
+}
+
+.decision-left-ss {
+  height: 25vw;
+  position:absolute;
+  top:45%;
+  left:52%;
+  margin-right:-50%;
+  transform: translate(-110%,-5%);
+}
+/* -80 bigger means go right*/
+
+.decision-right-ss {
+  height: 25vw;
+  position:absolute;
+  top:45%;
+  left:50%;
+  margin-right:-50%;
+  transform: translate(10%,-5%);
+}
+/* -10 smaller means go left*/
+
+.decision-left-sss_not {
+  height: 18vw;
+  position:absolute;
+  top:40%;
+  left:50%;
+  margin-right:-50%;
+  transform: translate(-125%,-5%);
+}
+
+.decision-left-ss-yes {
+  height: 25vw;
+  position:absolute;
+  top:45%;
+  left:52%;
+  margin-right:-50%;
+  transform: translate(-110%,-5%);
+  border: 8px
+  dashed #0000ff;
+}
+
+.decision-right-sss_not {
+  height: 18vw;
+  position:absolute;
+  top:40%;
+  left:50%;
+  margin-right:-50%;
+  transform: translate(25%,-5%);
+}
+
+.decision-right-ss-yes {
+  height: 25vw;
+  position:absolute;
+  top:45%;
+  left:50%;
+  margin-right:-50%;
+  transform: translate(10%,-5%);
+  border: 8px
+  dashed #0000ff;
+}
+
+
+.decision-left-fs {
+
+	height: 25vw;
+  position:absolute;
+  top:46%;
+  left:52%;
+  margin-right:-50%;
+  transform: translate(-110%,-5%);
+}
+
+.decision-right-fs {
+
+	height: 25vw;
+  position:absolute;
+  top:46%;
+  left:48%;
+  margin-right:-50%;
+  transform: translate(10%,-5%);
+}
+
+
+.decision-left-fs-yes {
+
+	height: 25vw;
+  position:absolute;
+  top:46%;
+  left:52%;
+  margin-right:-50%;
+  transform: translate(-110%,-5%);
+  border: 8px
+  dashed #0000ff;
+}
+
+.decision-right-fs-yes {
+	height: 25vw;
+  position:absolute;
+  top:46%;
+  left:48%;
+  margin-right:-50%;
+  transform: translate(10%,-5%);
+  border: 8px
+  dashed #0000ff;
+}
+
+
+.strategy_stim_left {
+  display: block;
+  height: 13vw;
+	position:absolute;
+	top:20%;
+	left:49%;
+	transform: translate(-195%,-5%);
+}
+
+
+.strategy_stim_right {
+  display: block;
+  height: 12vw;
+	position:absolute;
+	top:20%;
+	left:52%;
+	transform: translate(100%,-5%);
+}
